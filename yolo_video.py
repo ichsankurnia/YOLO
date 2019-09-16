@@ -24,7 +24,7 @@ net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 ln = net.getLayerNames()
 ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 
-cam = cv2.VideoCapture("test-videos/car_chase_02.mp4")
+cam = cv2.VideoCapture("test-videos/car_chase_01.mp4")
 writer = None
 (W, H) = (None, None)
 
