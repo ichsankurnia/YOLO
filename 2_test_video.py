@@ -11,7 +11,7 @@ option = {
 
 tfnet = TFNet(option)
 
-capture = cv2.VideoCapture('test-videos/Los Angeles Police Chase 10--11-2018 - Reckless Driver Stolen Car Pursuit.mp4')
+capture = cv2.VideoCapture('test-videos/car_chase_01.mp4')
 colors = [tuple(255 * np.random.rand(3)) for i in range(5)]
 
 
