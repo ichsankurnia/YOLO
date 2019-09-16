@@ -21,9 +21,6 @@ while 1:
 
     results = tfnet.return_predict(frame)
 
-    for result in results:
-
-
     for color, result in zip(colors, results):
         tl = (result['topleft']['x'], result['topleft']['y'])
         br = (result['bottomright']['x'], result['bottomright']['y'])
@@ -33,7 +30,12 @@ while 1:
 
     cv2.imshow('frame', frame)
     print('FPS {:.1f}'.format(1 / (time.time() - stime)))
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    
+    if cv2.waitKey(1) == 32:
+        break
+
+capture.release()
+cv2.destroyAllWindows()
 
 # while (capture.isOpened()):
 #     stime = time.time()
