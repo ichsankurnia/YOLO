@@ -8,20 +8,8 @@ import time
 import cv2
 import os
 
-# construct the argument parse and parse the arguments
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required=True,
-	help="path to input image")
-ap.add_argument("-y", "--yolo", required=True,
-	help="base path to YOLO directory")
-ap.add_argument("-c", "--confidence", type=float, default=0.5,
-	help="minimum probability to filter weak detections")
-ap.add_argument("-t", "--threshold", type=float, default=0.3,
-	help="threshold when applyong non-maxima suppression")
-args = vars(ap.parse_args())
-
 # load the COCO class labels our YOLO model was trained on
-labelsPath = os.path.sep.join([args["yolo"], "coco.names"])
+labelsPath = os.path.sep.join(["adrian", "coco.names"])
 LABELS = open(labelsPath).read().strip().split("\n")
 
 # initialize a list of colors to represent each possible class label
@@ -30,15 +18,15 @@ COLORS = np.random.randint(0, 255, size=(len(LABELS), 3),
 	dtype="uint8")
 
 # derive the paths to the YOLO weights and model configuration
-weightsPath = os.path.sep.join([args["yolo"], "yolov3.weights"])
-configPath = os.path.sep.join([args["yolo"], "yolov3.cfg"])
+weightsPath = os.path.sep.join(["adrian", "yolov3.weights"])
+configPath = os.path.sep.join(["adrian", "yolov3.cfg"])
 
 # load our YOLO object detector trained on COCO dataset (80 classes)
 print("[INFO] loading YOLO from disk...")
 net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 
 # load our input image and grab its spatial dimensions
-image = cv2.imread(args["image"])
+image = cv2.imread("test-images/soccer.jpg")
 (H, W) = image.shape[:2]
 
 # determine only the *output* layer names that we need from YOLO
@@ -76,7 +64,7 @@ for output in layerOutputs:
 
 		# filter out weak predictions by ensuring the detected
 		# probability is greater than the minimum probability
-		if confidence > args["confidence"]:
+		if confidence > 0.5:
 			# scale the bounding box coordinates back relative to the
 			# size of the image, keeping in mind that YOLO actually
 			# returns the center (x, y)-coordinates of the bounding
@@ -97,8 +85,8 @@ for output in layerOutputs:
 
 # apply non-maxima suppression to suppress weak, overlapping bounding
 # boxes
-idxs = cv2.dnn.NMSBoxes(boxes, confidences, args["confidence"],
-	args["threshold"])
+idxs = cv2.dnn.NMSBoxes(boxes, confidences, 0.5,
+	0.3)
 
 # ensure at least one detection exists
 if len(idxs) > 0:
