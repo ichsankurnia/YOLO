@@ -45,5 +45,5 @@ img = cv2.putText(img, label, tl, cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 0), 2)
 # plt.imshow(img)
 # plt.show()
 
-cv2.imshow(img)
+cv2.imshow("image", img)
 cv2.waitKey(0)

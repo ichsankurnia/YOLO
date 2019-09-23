@@ -36,8 +36,7 @@ ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 # construct a blob from the input image and then perform a forward
 # pass of the YOLO object detector, giving us our bounding boxes and
 # associated probabilities
-blob = cv2.dnn.blobFromImage(image, 1 / 255.0, (416, 416),
-	swapRB=True, crop=False)
+blob = cv2.dnn.blobFromImage(image, 1 / 255.0, (416, 416), swapRB=True, crop=False)
 net.setInput(blob)
 start = time.time()
 layerOutputs = net.forward(ln)

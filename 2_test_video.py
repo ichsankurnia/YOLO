@@ -11,7 +11,7 @@ option = {
 
 tfnet = TFNet(option)
 
-capture = cv2.VideoCapture('test-videos/car_chase_01.mp4')
+capture = cv2.VideoCapture(0)
 colors = [tuple(255 * np.random.rand(3)) for i in range(5)]
 
 
@@ -31,7 +31,7 @@ while 1:
     cv2.imshow('frame', frame)
     print('FPS {:.1f}'.format(1 / (time.time() - stime)))
     
-    if cv2.waitKey(1) == 32:
+    if cv2.waitKey(1) == 27:
         break
 
 capture.release()
