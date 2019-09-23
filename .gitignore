@@ -9,4 +9,4 @@ cfg/
 darkflow/
 test-videos/
 adrian/*.weights
-Custom Object Detection/
+Custom Object Detection/images/
