@@ -13,7 +13,7 @@ object_list = []
 # constants
 image_folder = 'images'
 savedir = 'annotations'
-obj = 'fidget_spinner'
+obj = 'rexona'
 
 
 def line_select_callback(clk, rls):
@@ -49,7 +49,8 @@ if __name__ == '__main__':
         img = image_file
         fig, ax = plt.subplots(1)
         mngr = plt.get_current_fig_manager()
-        mngr.window.setGeometry(250, 120, 1280, 1024)
+        mngr.window.setGeometry = (250, 120, 1280, 1024)
+        # mngr.window.setGeometry(250, 120, 1280, 1024)
         image = cv2.imread(image_file.path)
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         ax.imshow(image)
