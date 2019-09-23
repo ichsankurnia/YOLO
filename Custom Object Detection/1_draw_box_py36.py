@@ -13,7 +13,7 @@ object_list = []
 # constants
 image_folder = 'images'
 savedir = 'xml_file'
-obj = 'fidget_spinner'
+obj = 'rexona'
 
 
 def line_select_callback(clk, rls):
@@ -30,7 +30,7 @@ def onkeypress(event):
     global tl_list
     global br_list
     global img
-    if event.key == 'q':
+    if event.key == ' ':
         print(object_list)
         write_xml(image_folder, img, object_list, tl_list, br_list, savedir)
         tl_list = []
