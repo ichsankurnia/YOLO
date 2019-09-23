@@ -45,7 +45,7 @@ if __name__ == '__main__':
     """
 
     folder = 'images'
-    img = [im for im in os.scandir('images') if '000001' in im.name][0]
+    img = [im for im in os.scandir('images') if '000000' in im.name][0]
     objects = ['rexona']
     tl = [(10, 10)]
     br = [(100, 100)]
