@@ -2,7 +2,7 @@
 
 1. Create train directory and dataset directory
 
-2. Create folder images and file_xml in directory train
+2. Create folder images and xml_file in directory train
 
 3. put all dataset images in folder dataset
 
@@ -11,7 +11,7 @@ the new dataset images will be saved on directory train/images
 
 6. to mark the object in the images run 1_draw_box.py or 1_draw_box_py36.py if you get an error in one of the scripts
 
-7. xml dataset has been written in train/file_xml and ready to train
+7. xml dataset has been written in train/xml_file and ready to train
 
 
 *The steps below assume we want to use tiny YOLO and our dataset has 1 classes*
