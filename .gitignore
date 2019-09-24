@@ -7,8 +7,10 @@
 bin/*.weights
 test-videos/
 adrian/*.weights
+darkflow/
 
 Custom Object Detection/bin/*.weights
 Custom Object Detection/ckpt/
+Custom Object Detection/darkflow/
 Custom Object Detection/dataset/
-Custom Object Detection/train/
+Custom Object Detection/train/*
