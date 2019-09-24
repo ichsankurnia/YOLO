@@ -1,10 +1,24 @@
 ### Training on your own dataset
 
-*The steps below assume we want to use tiny YOLO and our dataset has 3 classes*
+1. Create train directory and dataset directory
+
+2. Create folder images and xml file in directory train
+
+3. put all dataset images in folder dataset
+
+4. run 0_rename.py to rename and sort the dataset images, so the dataset to be trained only has this format (ex: 000000.png - 000082.png)
+the new dataset images will be saved on directory train/images
+
+6. to mark the object in the images run 1_draw_box.py or 1_draw_box_py36.py if you get an error in one of the scripts
+
+7. xml dataset has been written in train/file_xml and ready to train
+
+
+*The steps below assume we want to use tiny YOLO and our dataset has 1 classes*
 
 1. Create a copy of the configuration file `tiny-yolo-voc.cfg` and rename it according to your preference `tiny-yolo-voc-3c.cfg` (It is crucial that you leave the original `tiny-yolo-voc.cfg` file unchanged, see below for explanation).
 
-2. In `tiny-yolo-voc-3c.cfg`, change classes in the [region] layer (the last layer) to the number of classes you are going to train for. In our case, classes are set to 3.
+2. In `tiny-yolo-voc-1c.cfg`, change classes in the [region] layer (the last layer) to the number of classes you are going to train for. In our case, classes are set to 1.
     
     ```python
     ...
@@ -12,7 +26,7 @@
     [region]
     anchors = 1.08,1.19,  3.42,4.41,  6.63,11.38,  9.42,5.11,  16.62,10.52
     bias_match=1
-    classes=3
+    classes=1
     coords=4
     num=5
     softmax=1
@@ -20,7 +34,7 @@
     ...
     ```
 
-3. In `tiny-yolo-voc-3c.cfg`, change filters in the [convolutional] layer (the second to last layer) to num * (classes + 5). In our case, num is 5 and classes are 3 so 5 * (3 + 5) = 40 therefore filters are set to 40.
+3. In `tiny-yolo-voc-3c.cfg`, change filters in the [convolutional] layer (the second to last layer) to num * (classes + 5). In our case, num is 5 and classes are 1 so 5 * (1 + 5) = 30 therefore filters are set to 30.
     
     ```python
     ...
@@ -29,7 +43,7 @@
     size=1
     stride=1
     pad=1
-    filters=40
+    filters=30
     activation=linear
 
     [region]
@@ -38,16 +52,16 @@
     ...
     ```
 
-4. Change `labels.txt` to include the label(s) you want to train on (number of labels should be the same as the number of classes you set in `tiny-yolo-voc-3c.cfg` file). In our case, `labels.txt` will contain 3 labels.
+4. Change `labels.txt` to include the label(s) you want to train on (number of labels should be the same as the number of classes you set in `tiny-yolo-voc-1c.cfg` file). In our case, `labels.txt` will contain 1 labels.
 
     ```
     label1
-    label2
-    label3
     ```
-5. Reference the `tiny-yolo-voc-3c.cfg` model when you train.
+5. Reference the `tiny-yolo-voc-1c.cfg` model when you train.
 
-    `flow --model cfg/tiny-yolo-voc-3c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images`
+    `flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images`
+
+    'python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/xml_file --dataset train/images --gpu 0.8 --epoch 300'
 
 
 * Why should I leave the original `tiny-yolo-voc.cfg` file unchanged?
