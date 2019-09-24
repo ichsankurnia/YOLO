@@ -1,0 +1,22 @@
+<annotation>
+  <folder>images</folder>
+  <filename>000024.png</filename>
+  <segmented>0</segmented>
+  <size>
+    <width>2340</width>
+    <height>4160</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>rexona</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>190</xmin>
+      <ymin>1658</ymin>
+      <xmax>2238</xmax>
+      <ymax>2491</ymax>
+    </bndbox>
+  </object>
+</annotation>
