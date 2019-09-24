@@ -2,7 +2,7 @@
 
 1. Create train directory and dataset directory
 
-2. Create folder images and xml file in directory train
+2. Create folder images and xml_file in directory train
 
 3. put all dataset images in folder dataset
 
@@ -11,7 +11,7 @@ the new dataset images will be saved on directory train/images
 
 6. to mark the object in the images run 1_draw_box.py or 1_draw_box_py36.py if you get an error in one of the scripts
 
-7. xml dataset has been written in train/file_xml and ready to train
+7. xml dataset has been written in train/xml_file and ready to train
 
 
 *The steps below assume we want to use tiny YOLO and our dataset has 1 classes*
@@ -61,12 +61,12 @@ the new dataset images will be saved on directory train/images
 
     `flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images`
 
-    'python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/xml_file --dataset train/images --gpu 0.8 --epoch 300'
+    `python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/xml_file --dataset train/images --gpu 0.8 --epoch 300`
 
 
 * Why should I leave the original `tiny-yolo-voc.cfg` file unchanged?
     
-    When darkflow sees you are loading `tiny-yolo-voc.weights` it will look for `tiny-yolo-voc.cfg` in your cfg/ folder and compare that configuration file to the new one you have set with `--model cfg/tiny-yolo-voc-3c.cfg`. In this case, every layer will have the same exact number of weights except for the last two, so it will load the weights into all layers up to the last two because they now contain different number of weights.
+    When darkflow sees you are loading `tiny-yolo-voc.weights` it will look for `tiny-yolo-voc.cfg` in your cfg/ folder and compare that configuration file to the new one you have set with `--model cfg/tiny-yolo-voc-1c.cfg`. In this case, every layer will have the same exact number of weights except for the last two, so it will load the weights into all layers up to the last two because they now contain different number of weights.
 
 
 ## Camera/video file demo
