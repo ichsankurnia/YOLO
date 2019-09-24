@@ -44,10 +44,10 @@ if __name__ == '__main__':
     for testing
     """
 
-    folder = 'images'
-    img = [im for im in os.scandir('images') if '000000' in im.name][0]
+    folder = 'train/images'
+    img = [im for im in os.scandir('train/images') if '000000' in im.name][0]
     objects = ['rexona']
     tl = [(10, 10)]
     br = [(100, 100)]
-    savedir = 'xml_file'
+    savedir = 'train/xml_file'
     write_xml(folder, img, objects, tl, br, savedir)

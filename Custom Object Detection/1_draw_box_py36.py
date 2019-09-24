@@ -11,8 +11,8 @@ br_list = []
 object_list = []
 
 # constants
-image_folder = 'images'
-savedir = 'xml_file'
+image_folder = 'train/images'
+savedir = 'train/xml_file'
 obj = 'rexona'
 
 
