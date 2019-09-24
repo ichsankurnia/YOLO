@@ -10,3 +10,6 @@ darkflow/
 test-videos/
 adrian/*.weights
 Custom Object Detection/images/
+Custom Object Detection/bin/
+Custom Object Detection/ckpt/
+Custom Object Detection/darkflow/
