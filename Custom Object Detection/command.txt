@@ -1,3 +1,3 @@
 python flow --model cfg/yolov2.cfg --load bin/yolov2.weights --demo video1.mp4 --saveVideo --gpu 1
 
-python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation xml_file --dataset images --gpu 0.8 --epoch 300
+python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/xml_file --dataset train/images --gpu 0.8 --epoch 300
