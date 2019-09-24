@@ -5,13 +5,10 @@
 *.ali
 
 bin/*.weights
-darkflow/
 test-videos/
 adrian/*.weights
 
-Custom Object Detection/darkflow/
 Custom Object Detection/bin/*.weights
 Custom Object Detection/ckpt/
-Custom Object Detection/darkflow/
 Custom Object Detection/dataset/
 Custom Object Detection/train/
