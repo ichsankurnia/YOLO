@@ -2,7 +2,7 @@
 
 1. Create train directory and dataset directory
 
-2. Create folder images and xml file in directory train
+2. Create folder images and file_xml in directory train
 
 3. put all dataset images in folder dataset
 
@@ -61,7 +61,7 @@ the new dataset images will be saved on directory train/images
 
     `flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images`
 
-    'python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/xml_file --dataset train/images --gpu 0.8 --epoch 300'
+    `python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/xml_file --dataset train/images --gpu 0.8 --epoch 300`
 
 
 * Why should I leave the original `tiny-yolo-voc.cfg` file unchanged?
