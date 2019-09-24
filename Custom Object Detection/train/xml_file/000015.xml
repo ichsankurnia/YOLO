@@ -1,5 +1,5 @@
 <annotation>
-  <folder>images</folder>
+  <folder>train/images</folder>
   <filename>000015.png</filename>
   <segmented>0</segmented>
   <size>
@@ -13,22 +13,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>1039</xmin>
-      <ymin>839</ymin>
-      <xmax>3270</xmax>
-      <ymax>1694</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>1039</xmin>
-      <ymin>839</ymin>
-      <xmax>3270</xmax>
-      <ymax>1694</ymax>
+      <xmin>1010</xmin>
+      <ymin>821</ymin>
+      <xmax>3276</xmax>
+      <ymax>1726</ymax>
     </bndbox>
   </object>
 </annotation>

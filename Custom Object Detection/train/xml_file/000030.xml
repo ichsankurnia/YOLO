@@ -1,5 +1,5 @@
 <annotation>
-  <folder>images</folder>
+  <folder>train/images</folder>
   <filename>000030.png</filename>
   <segmented>0</segmented>
   <size>
@@ -13,82 +13,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>325</xmin>
-      <ymin>1264</ymin>
-      <xmax>2204</xmax>
-      <ymax>3448</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>325</xmin>
-      <ymin>1264</ymin>
-      <xmax>2204</xmax>
-      <ymax>3448</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>325</xmin>
-      <ymin>1264</ymin>
-      <xmax>2204</xmax>
-      <ymax>3448</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>325</xmin>
-      <ymin>1264</ymin>
-      <xmax>2204</xmax>
-      <ymax>3448</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>325</xmin>
-      <ymin>1264</ymin>
-      <xmax>2204</xmax>
-      <ymax>3448</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>325</xmin>
-      <ymin>1410</ymin>
-      <xmax>2204</xmax>
-      <ymax>3448</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>325</xmin>
-      <ymin>1410</ymin>
-      <xmax>2126</xmax>
-      <ymax>3448</ymax>
+      <xmin>289</xmin>
+      <ymin>1279</ymin>
+      <xmax>2149</xmax>
+      <ymax>3478</ymax>
     </bndbox>
   </object>
 </annotation>

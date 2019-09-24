@@ -1,5 +1,5 @@
 <annotation>
-  <folder>images</folder>
+  <folder>train/images</folder>
   <filename>000079.png</filename>
   <segmented>0</segmented>
   <size>
@@ -13,10 +13,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>185</xmin>
-      <ymin>134</ymin>
-      <xmax>316</xmax>
-      <ymax>483</ymax>
+      <xmin>186</xmin>
+      <ymin>133</ymin>
+      <xmax>315</xmax>
+      <ymax>481</ymax>
     </bndbox>
   </object>
 </annotation>

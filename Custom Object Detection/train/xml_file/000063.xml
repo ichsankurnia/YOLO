@@ -1,5 +1,5 @@
 <annotation>
-  <folder>images</folder>
+  <folder>train/images</folder>
   <filename>000063.png</filename>
   <segmented>0</segmented>
   <size>
@@ -13,10 +13,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>344</xmin>
-      <ymin>76</ymin>
-      <xmax>458</xmax>
-      <ymax>387</ymax>
+      <xmin>360</xmin>
+      <ymin>88</ymin>
+      <xmax>452</xmax>
+      <ymax>385</ymax>
     </bndbox>
   </object>
   <object>
@@ -25,22 +25,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>344</xmin>
-      <ymin>85</ymin>
-      <xmax>458</xmax>
-      <ymax>387</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>340</xmin>
-      <ymin>85</ymin>
-      <xmax>458</xmax>
-      <ymax>387</ymax>
+      <xmin>343</xmin>
+      <ymin>88</ymin>
+      <xmax>452</xmax>
+      <ymax>385</ymax>
     </bndbox>
   </object>
 </annotation>

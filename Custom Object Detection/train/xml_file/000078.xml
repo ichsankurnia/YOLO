@@ -1,5 +1,5 @@
 <annotation>
-  <folder>images</folder>
+  <folder>train/images</folder>
   <filename>000078.png</filename>
   <segmented>0</segmented>
   <size>
@@ -13,9 +13,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>0</xmin>
+      <xmin>1</xmin>
       <ymin>104</ymin>
-      <xmax>41</xmax>
+      <xmax>42</xmax>
       <ymax>200</ymax>
     </bndbox>
   </object>
@@ -26,8 +26,8 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>48</xmin>
-      <ymin>105</ymin>
-      <xmax>85</xmax>
+      <ymin>103</ymin>
+      <xmax>86</xmax>
       <ymax>200</ymax>
     </bndbox>
   </object>
@@ -37,10 +37,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>92</xmin>
-      <ymin>105</ymin>
+      <xmin>91</xmin>
+      <ymin>106</ymin>
       <xmax>129</xmax>
-      <ymax>199</ymax>
+      <ymax>201</ymax>
     </bndbox>
   </object>
   <object>
@@ -52,7 +52,7 @@
       <xmin>135</xmin>
       <ymin>105</ymin>
       <xmax>174</xmax>
-      <ymax>201</ymax>
+      <ymax>200</ymax>
     </bndbox>
   </object>
   <object>
@@ -62,7 +62,7 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>178</xmin>
-      <ymin>104</ymin>
+      <ymin>106</ymin>
       <xmax>215</xmax>
       <ymax>200</ymax>
     </bndbox>
@@ -73,9 +73,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>222</xmin>
+      <xmin>223</xmin>
       <ymin>104</ymin>
-      <xmax>261</xmax>
+      <xmax>258</xmax>
       <ymax>201</ymax>
     </bndbox>
   </object>
@@ -85,10 +85,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>265</xmin>
-      <ymin>104</ymin>
-      <xmax>304</xmax>
-      <ymax>200</ymax>
+      <xmin>263</xmin>
+      <ymin>102</ymin>
+      <xmax>302</xmax>
+      <ymax>199</ymax>
     </bndbox>
   </object>
   <object>
@@ -97,22 +97,22 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>3</xmin>
-      <ymin>5</ymin>
-      <xmax>40</xmax>
-      <ymax>99</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>304</xmin>
+      <xmin>303</xmin>
       <ymin>2</ymin>
-      <xmax>344</xmax>
+      <xmax>345</xmax>
       <ymax>98</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>rexona</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>4</xmin>
+      <ymin>4</ymin>
+      <xmax>39</xmax>
+      <ymax>100</ymax>
     </bndbox>
   </object>
 </annotation>

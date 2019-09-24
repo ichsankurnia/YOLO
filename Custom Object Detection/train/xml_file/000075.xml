@@ -1,5 +1,5 @@
 <annotation>
-  <folder>images</folder>
+  <folder>train/images</folder>
   <filename>000075.png</filename>
   <segmented>0</segmented>
   <size>
@@ -14,9 +14,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>2</xmin>
-      <ymin>92</ymin>
+      <ymin>94</ymin>
       <xmax>99</xmax>
-      <ymax>310</ymax>
+      <ymax>308</ymax>
     </bndbox>
   </object>
   <object>
@@ -25,21 +25,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>2</xmin>
-      <ymin>92</ymin>
-      <xmax>104</xmax>
-      <ymax>310</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>114</xmin>
-      <ymin>96</ymin>
-      <xmax>205</xmax>
+      <xmin>110</xmin>
+      <ymin>93</ymin>
+      <xmax>204</xmax>
       <ymax>307</ymax>
     </bndbox>
   </object>
@@ -49,9 +37,57 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>114</xmin>
-      <ymin>93</ymin>
-      <xmax>202</xmax>
+      <xmin>214</xmin>
+      <ymin>91</ymin>
+      <xmax>299</xmax>
+      <ymax>305</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>rexona</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>214</xmin>
+      <ymin>91</ymin>
+      <xmax>299</xmax>
+      <ymax>305</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>rexona</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>214</xmin>
+      <ymin>91</ymin>
+      <xmax>299</xmax>
+      <ymax>305</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>rexona</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>314</xmin>
+      <ymin>91</ymin>
+      <xmax>401</xmax>
+      <ymax>305</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>rexona</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>420</xmin>
+      <ymin>91</ymin>
+      <xmax>502</xmax>
       <ymax>307</ymax>
     </bndbox>
   </object>
@@ -61,10 +97,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>211</xmin>
-      <ymin>92</ymin>
-      <xmax>302</xmax>
-      <ymax>305</ymax>
+      <xmin>516</xmin>
+      <ymin>88</ymin>
+      <xmax>610</xmax>
+      <ymax>311</ymax>
     </bndbox>
   </object>
   <object>
@@ -73,94 +109,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>321</xmin>
+      <xmin>516</xmin>
       <ymin>93</ymin>
-      <xmax>404</xmax>
-      <ymax>305</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>426</xmin>
-      <ymin>92</ymin>
-      <xmax>505</xmax>
-      <ymax>306</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>416</xmin>
-      <ymin>92</ymin>
-      <xmax>505</xmax>
-      <ymax>306</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>416</xmin>
-      <ymin>92</ymin>
-      <xmax>505</xmax>
-      <ymax>306</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>521</xmin>
-      <ymin>96</ymin>
-      <xmax>611</xmax>
-      <ymax>308</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>516</xmin>
-      <ymin>96</ymin>
-      <xmax>611</xmax>
-      <ymax>308</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>516</xmin>
-      <ymin>96</ymin>
-      <xmax>611</xmax>
-      <ymax>308</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>rexona</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>516</xmin>
-      <ymin>100</ymin>
       <xmax>608</xmax>
-      <ymax>308</ymax>
+      <ymax>311</ymax>
     </bndbox>
   </object>
   <object>
@@ -170,9 +122,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>617</xmin>
-      <ymin>94</ymin>
-      <xmax>708</xmax>
-      <ymax>314</ymax>
+      <ymin>91</ymin>
+      <xmax>707</xmax>
+      <ymax>310</ymax>
     </bndbox>
   </object>
   <object>
@@ -181,10 +133,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>610</xmin>
-      <ymin>94</ymin>
-      <xmax>708</xmax>
-      <ymax>314</ymax>
+      <xmin>611</xmin>
+      <ymin>91</ymin>
+      <xmax>707</xmax>
+      <ymax>310</ymax>
     </bndbox>
   </object>
 </annotation>
