@@ -58,15 +58,21 @@ the new dataset images will be saved on directory train/images
     label1
     ```
 5. Reference the `tiny-yolo-voc-1c.cfg` model when you train.
-
-    `flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/Annotations --dataset train/Images`
-
+    
+    with 80% GPU
     `python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/xml_file --dataset train/images --gpu 0.8 --epoch 300`
+
+    with 100% CPU
+    `python flow --model cfg/tiny-yolo-voc-1c.cfg --load bin/tiny-yolo-voc.weights --train --annotation train/xml_file --dataset train/images --epoch 300`
 
 
 * Why should I leave the original `tiny-yolo-voc.cfg` file unchanged?
     
     When darkflow sees you are loading `tiny-yolo-voc.weights` it will look for `tiny-yolo-voc.cfg` in your cfg/ folder and compare that configuration file to the new one you have set with `--model cfg/tiny-yolo-voc-1c.cfg`. In this case, every layer will have the same exact number of weights except for the last two, so it will load the weights into all layers up to the last two because they now contain different number of weights.
+
+
+================== FINISH TRAINING ====================
+test using `test-training.py`, adjust value of load at option model
 
 
 ## Camera/video file demo
