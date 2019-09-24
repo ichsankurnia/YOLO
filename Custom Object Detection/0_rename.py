@@ -22,7 +22,7 @@ id = 0
 
 for file in path:
 	img = cv2.imread(file)
-	cv2.imwrite('train/images/' + '{:06}.png'.format(id), img)
+	cv2.imwrite('train/images/' + '{:06}.jpg'.format(id), img)
 	print("Please Wait! Processing rename file {} from {}".format(id, len(path)))
 	id +=1
 	
