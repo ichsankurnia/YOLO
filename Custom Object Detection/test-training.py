@@ -4,10 +4,10 @@ import numpy as np
 import time
 
 option = {
-    'model': 'cfg/tiny-yolo-voc-1c.cfg',
-    'load': 125,
+    'model': 'cfg/tiny-yolo-voc-1c.cfg', # 'cfg/tiny-yolo-voc-fs.cfg'
+    'load': 125,    # take the highest score from the training number from ckpt dir(ex: tiny-yolo-voc-1c-125.data-00000-of-00001)
     'threshold': 0.15,
-    # 'gpu' : 0.8
+    # 'gpu' : 0.8   ## using 80% GPU
 }
 
 tfnet = TFNet(option)
