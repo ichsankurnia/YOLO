@@ -2,7 +2,7 @@
 
 1. Create train directory and dataset directory
 
-2. Create folder images and xml_file in directory train
+2. Create folder images and folder xml_file in directory train
 
 3. put all dataset images in folder dataset
 
@@ -74,6 +74,7 @@ the new dataset images will be saved on directory train/images
 ================== FINISH TRAINING ====================
 
 test using `test-training.py`, adjust value of load at option model
+
 
 
 ## Camera/video file demo
