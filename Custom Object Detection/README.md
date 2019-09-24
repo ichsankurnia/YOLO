@@ -72,6 +72,7 @@ the new dataset images will be saved on directory train/images
 
 
 ================== FINISH TRAINING ====================
+
 test using `test-training.py`, adjust value of load at option model
 
 
